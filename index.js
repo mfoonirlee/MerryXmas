@@ -358,10 +358,7 @@ webpackJsonp([18],{
 				}
 				if (Date.now() - this._timer > 1000) {
 					this._timer = Date.now();
-					(0, _
-					 
-					 
-					 2.default)('time pass: ' + ++this._ticker + 's');
+					(0, _debug2.default)('time pass: ' + ++this._ticker + 's');
 				}
 	
 				for (var i = 0, len = this.starList && this.starList.length; i < len; i++) {
