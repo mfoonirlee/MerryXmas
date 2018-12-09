@@ -235,7 +235,8 @@ webpackJsonp([18],{
 		}, {
 			key: 'onSelect',
 			value: function onSelect(event) {
-				// console.log(`${event.clientX} ${event.clientY}`);
+				// console.
+				(`${event.clientX} ${event.clientY}`);
 				this.mouse = {};
 				this.mouse.x = event.clientX / window.innerWidth * 2 - 1;
 				this.mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
@@ -357,7 +358,10 @@ webpackJsonp([18],{
 				}
 				if (Date.now() - this._timer > 1000) {
 					this._timer = Date.now();
-					(0, _debug2.default)('time pass: ' + ++this._ticker + 's');
+					(0, _
+					 
+					 
+					 2.default)('time pass: ' + ++this._ticker + 's');
 				}
 	
 				for (var i = 0, len = this.starList && this.starList.length; i < len; i++) {
@@ -551,7 +555,7 @@ webpackJsonp([18],{
 	        return;
 	    }
 	    usedInfo.push(info);
-	    console.log("debug info: " + info);
+// 	    console.log("debug info: " + info);
 	};
 
 /***/ },
