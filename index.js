@@ -912,7 +912,9 @@ webpackJsonp([18],{
 	    if (currentName.indexOf('%') > -1) {
 	        currentName = decodeURIComponent(currentName);
 	    }
-	    currentName = currentName || NAME;
+	    if (!currentName || currentName.indexOf('?') > -1) {
+	    	currentName = NAME;
+	    }
 	    // mid text
 	    var div = document.createElement('div');
 	    div.id = 'j_to';
