@@ -9,9 +9,39 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="email=no"/>
     <link rel="stylesheet" type="text/css" href="./index.css" />
+    <img style="display:none" src="./xmastree.png" />
     <img style='display:none' src='https://mmbiz.qpic.cn/mmbiz_jpg/WGvM1B6qozH6ucaZZjLYLowpWlNMgjGEOF4Cp1micgoianib2EicoEIicRZibbV51henia7pBG9anwEjJG1ibk4ics4bqkQ/0?wx_fmt=jpeg' />
 </head>
 <body>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+    alert(1);
+	wx.config({
+		debug: false,
+		appId: 'wxfb95e4025a5d4614',
+		timestamp: '1498633007',
+		nonceStr: 'tnZJBsdrUo88MFiB',
+		signature: 'cae67a0a883822e1087cba091321b14b73152210',
+		jsApiList: [
+			'onMenuShareTimeline',
+			'onMenuShareAppMessage'
+		  ]
+	});
+	wx.ready(function () {
+        alert(2);
+		var shareData = {
+			title: '🎄圣诞快乐🎄',	//	标题
+			desc: '来自电猫的问候',	//	描述
+			link: 'https://mfoonirlee.github.io/MerryXmas/index.html',	//	分享的URL，必须和当前打开的网页的URL是一样的
+			imgUrl: 'https://mfoonirlee.github.io/MerryXmas/xmastree.png'	//	缩略图地址
+		};
+		wx.onMenuShareAppMessage(shareData);
+		wx.onMenuShareTimeline(shareData);
+	});
+	wx.error(function (res) {
+	  //alert(res.errMsg);//错误提示
+	});
+</script>
 <script type="text/javascript" src="./three.min.js"></script>
 <script type="text/javascript" src="./common.js"></script>
 <script type="text/javascript" src="./index.js"></script>
