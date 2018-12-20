@@ -18,7 +18,7 @@
     -webkit-appearance: none;
     font-family: 'blackandwhitepicture', 'Comic Sans Ms', 'Lucida Sans Unicode', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, sans-serif;
     transition: box-shadow .5s;
-    animation: inputAni 6s ease-in-out;
+    animation: inputAni 3s ease-in-out;
 }
 .button{
     width: 40%;
