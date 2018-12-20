@@ -48,7 +48,7 @@
 
     var input = document.createElement('input');
     input.className = 'input';
-    input.placeholder = '输入昵称';
+    input.placeholder = 'Input your name:';
     input.id = 'input';
     input.oninput = function(e) {
         // console.log(e);
@@ -65,7 +65,7 @@
         // alert('这是你的🎄链接：https://mfoonirlee.github.io/MerryXmas/index.html?name=' + str_encrypt(input.value));
         location.href = 'https://mfoonirlee.github.io/MerryXmas/index.html?name=' + str_encrypt(input.value);
     }
-    div.innerHTML = '生成链接';
+    div.innerHTML = 'Get Tree!';
     div.className = 'button';
     div.id = div;
     document.body.appendChild(div);
