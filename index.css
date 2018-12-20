@@ -18,6 +18,7 @@
     -webkit-appearance: none;
     font-family: 'blackandwhitepicture', 'Comic Sans Ms', 'Lucida Sans Unicode', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, sans-serif;
     transition: box-shadow .5s;
+    animation: input 1.2s;
 }
 .button{
     width: 40%;
@@ -170,3 +171,12 @@ body{
         opacity: 0;
     }
 }
+@keyframes input{
+    0%{
+        opacity: 0;
+        transform: scaleY(0);
+    }
+    100%{
+        opacity: .85;
+        transform: scaleY(1);
+    }
