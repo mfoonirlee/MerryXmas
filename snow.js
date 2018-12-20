@@ -7,7 +7,7 @@
 // import snow4 from './snow4.png';
 
 (function(){
-    var ScaleWidth = [15, 5];
+    var ScaleWidth = [12, 4];
     var ClassNum = 4;
     var ClassName = 'snow snow';
     var Dur = [30, 15];
