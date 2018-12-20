@@ -104,13 +104,16 @@ body{
     0%{
         left: 0;
         top: -60px;
+        opacity: 0;
     }
     50%{
         top: 50%;
+        opacity: 1;
     }
     100%{
         left: -50%;
         top: 200%;
+        opacity: 0;
     }
 }
 
@@ -118,13 +121,16 @@ body{
     0%{
         left: 33%;
         top: -60px;
+        opacity: 0;
     }
     50%{
         top: 50%;
+        opacity: 1;
     }
     100%{
         left: 50%;
         top: 200%;
+        opacity: 0;
     }
 }
 
@@ -132,13 +138,17 @@ body{
     0%{
         left: 66%;
         top: -60px;
+        opacity: 0;
     }
+    30%{
+        opacity: 1;
     50%{
         top: 50%;
     }
     100%{
         left: 25%;
         top: 200%;
+        opacity: 0;
     }
 }
 
@@ -146,12 +156,17 @@ body{
     0%{
         left: 100%;
         top: -60px;
+        opacity: 0;
     }
     50%{
         top: 50%;
     }
+    70%{
+        opacity: 1;
+    }
     100%{
         left: -25%;
         top: 200%;
+        opacity: 0;
     }
 }
