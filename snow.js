@@ -52,7 +52,7 @@
     input.id = 'input';
     input.oninput = function(e) {
         // console.log(e);
-        if (e.data) {
+        if (input.value) {
             div.className = 'button button-in';
         } else {
             div.className = 'button';
