@@ -18,7 +18,7 @@
     -webkit-appearance: none;
     font-family: 'blackandwhitepicture', 'Comic Sans Ms', 'Lucida Sans Unicode', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, sans-serif;
     transition: box-shadow .5s;
-    animation: input 6s ease-in-out;
+    animation: inputAni 6s ease-in-out;
 }
 .button{
     width: 40%;
@@ -108,9 +108,11 @@ body{
         top: -60px;
         opacity: 0.2;
     }
+    40%{
+        opacity: 1;    
+    }
     50%{
         top: 50%;
-        opacity: 1;
     }
     100%{
         left: -50%;
@@ -125,9 +127,11 @@ body{
         top: -60px;
         opacity: 0.1;
     }
+    30%{
+        opacity: 1;
+    }
     50%{
         top: 50%;
-        opacity: 1;
     }
     100%{
         left: 50%;
@@ -144,6 +148,7 @@ body{
     }
     30%{
         opacity: 1;
+    }
     50%{
         top: 50%;
     }
@@ -172,7 +177,7 @@ body{
         opacity: 0;
     }
 }
-@keyframes input{
+@keyframes inputAni{
     0%{
         opacity: 0;
         transform: scaleY(0);
@@ -181,3 +186,4 @@ body{
         opacity: .85;
         transform: scaleY(1);
     }
+}
