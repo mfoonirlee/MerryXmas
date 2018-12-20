@@ -33,6 +33,7 @@
     font-size: 24px;
     top: 40%;
     opacity: 0;
+    font-family: 'blackandwhitepicture', 'Comic Sans Ms', 'Lucida Sans Unicode', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, sans-serif;
     transition: opacity .6s;
 }
 .button-in{
