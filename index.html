@@ -11,8 +11,27 @@
     <link rel="stylesheet" type="text/css" href="./index.css" />
 </head>
 <body>
+    <div class="move-out">
+        <div id='j_note' class="note"></div>
+    </div>
 <script type="text/javascript" src="./three.min.js"></script>
 <script type="text/javascript" src="./common.js"></script>
 <script type="text/javascript" src="./index.js"></script>
+<audio src='./ttls.mp3' preload="auto" id='a'></audio>
+<script type='text/javascript'>
+    var isPlay = false;
+    j_note.onclick = function() {
+        if(isPlay){
+            isPlay = false;
+            a.pause();
+            j_note.className = 'note';
+        }else{
+            isPlay = true;
+            a.play();
+            j_note.className = 'note note-rotate';
+        }
+        
+    }
+</script>
 </body>
 </html>
