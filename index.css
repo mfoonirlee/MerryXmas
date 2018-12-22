@@ -206,13 +206,13 @@ body{
 .move-out{
     position: absolute;
     width: 100%;
-    animation: move-out 20s linear forwards;
+    animation: move-out 30s linear forwards;
 }
 @keyframes move-out{
     from{
         transform: translateY(-100px);
     }
-    10%, 90%{
+    20%, 90%{
         transform: translateY(0)
     }
     to{
