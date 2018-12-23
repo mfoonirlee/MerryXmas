@@ -70,6 +70,47 @@
     div.id = div;
     document.body.appendChild(div);
     
+
+    function shuffleNumbers(numbersArray){
+        let len = numbersArray && numbersArray.length,
+            i = len, j, temp, arr = numbersArray.slice();
+        if(i == 0)return;
+        while(--i){
+            j = Math.floor(Math.random() * (i + 1));
+            temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+        return arr;
+    }
+
+    var text = 'Dear my friends: \n Merry Christmas! \n Yours @boltCat';
+    var html = '<p>';
+    var len = text.split('').length;
+    var arr = [];
+    var i = 0;
+    for(;i < len; i++){
+        arr.push(i);
+    }
+    arr = shuffleNumbers(arr);
+    text.split('').forEach(function(val, i){
+        var styles = '';
+        var delay = 'animation-delay: ' + arr[i] / 2 + 's;';
+        var dur = 'animation-duration: ' + (Math.floor(Math.random() * 4) + 1) + 's;'; 
+        styles += delay + dur;
+
+        if (val == '\n') {
+            html += '<p/><p>';
+        } else {
+            html += '<span style="' + styles +'" class="alBet shining">' + val + '</span>';
+        }
+    });
+
+    var words = document.createElement('div');
+    words.className = "al-wrapper";
+    words.innerHTML = html;
+    document.body.appendChild(words);
+
     var snowNum = 100;
     for (let i = 0; i < snowNum; i++) {
         new Snow();

@@ -52,7 +52,7 @@ body{
 .snow{
     will-change: transform;
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     top: -60px;
 }
 .rotate{
@@ -217,5 +217,38 @@ body{
     }
     to{
         transform: translateY(-100px);
+    }
+}
+.al-wrapper{
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-left: -40%;
+    font-size: 48px;
+    line-height: 80px;
+    color: #bfd9fa;
+    font-family: 'blackandwhitepicture', 'Comic Sans Ms', 'Lucida Sans Unicode', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, sans-serif;
+}
+.alBet{
+    opacity: 0;
+    text-shadow: 2px 2px 6px;
+}
+.al-wrapper > p:first-of-type{
+    text-align: left;
+}
+.al-wrapper > p:last-of-type{
+    text-align: right;
+}
+.shining{
+    animation: shining 3s ease-in forwards;
+}
+@keyframes shining{
+    0%{
+        opacity: 0;
+    } 
+    100%{
+        opacity: 1;
     }
 }
